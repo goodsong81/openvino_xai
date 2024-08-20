@@ -43,7 +43,7 @@ NOT_SUPPORTED_BY_BB_MODELS = {
 
 SUPPORTED_BUT_FAILED_BY_WB_MODELS = {
     "swin": "Only two outputs of the between block Add node supported, but got 1. Try to use black-box.",
-    "vit_base_patch16_rpn_224": "Number of normalization outputs > 1",
+    #"vit_base_patch16_rpn_224": "Number of normalization outputs > 1",
     "vit_relpos_medium_patch16_rpn_224": "ValueError in openvino_xai/methods/white_box/recipro_cam.py:215",
 }
 

@@ -211,6 +211,9 @@ class ViTReciproCAM(FeatureMapPerturbationBase):
         # Get target Add node in-between the transformer blocks
         target_node_ori = IRParserCls.get_target_node(self._model_ori, self.model_type, self._target_layer, self._k)
         target_node_name = self._target_layer or target_node_ori.get_friendly_name()
+        print(target_node_name)
+        import sys
+        sys.exit(0)
 
         # Get post-add nodes and check them
         post_target_node_clone = IRParserCls.get_post_target_node(model_clone, self.model_type, target_node_name)
